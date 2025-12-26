@@ -5,7 +5,7 @@
 
 <body id="bg">
 
-<script>
+<!-- <script>
     var bg = document.getElementById("bg");
 
     bg.style.width = window.innerWidth + "px";
@@ -15,7 +15,22 @@
     bg.style.backgroundRepeat = "no-repeat";
     bg.style.backgroundPosition = "center";
     bg.style.backgroundSize = "cover";
+</script> -->
+<script>
+  function fit() {
+    document.documentElement.style.height = innerHeight + "px";
+    document.documentElement.style.height = innerHeight + "px";
+
+    document.body.style.backgroundImage = "url('Santa-Claus.jpg')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundSize = "cover";
+  }
+
+  fit();
+  onresize = fit;
 </script>
+
 
 <marquee direction="left">
     <font color="red" size="200">ΚΑΛΑ</font>
