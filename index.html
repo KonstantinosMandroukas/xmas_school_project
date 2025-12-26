@@ -1,32 +1,43 @@
 <html>
-    <head>
-        <title>Χριστούγεννα - Αρχική</title>
-    </head>
-    <body bgcolor="E0AE75" background="Santa-Claus.jpg">
-        
-        <marquee direction="left"><font color="red" size=200>ΚΑΛΑ</font><font color="green" size=100> ΧΡΙΣΤΟΥΓΕΝΝΑ</font></marquee>
-        
-        
-        <table width="90%">
-      <tr>
-        <td align="left"><a href="ethima.html"><font size=6 color="87c38f"><b>Έθιμα Χριστουγέννων</b></font></a></td>
+<head>
+    <title>Χριστούγεννα - Αρχική</title>
+</head>
 
-      </tr>
-      <tr>
+<body id="bg">
 
-        <td align="left"><a href="glyka.html"><font size=6 color="00be9c"><b>Χριστουγεννιάτικα Γλυκά</b></font></a></td>
-          
-      </tr>
-    </table>
+<script>
+    var bg = document.getElementById("bg");
 
-      
+    bg.style.width = window.innerWidth + "px";
+    bg.style.height = window.innerHeight + "px";
 
+    bg.style.backgroundImage = "url('Santa-Claus.jpg')";
+    bg.style.backgroundRepeat = "no-repeat";
+    bg.style.backgroundPosition = "center";
+    bg.style.backgroundSize = "cover";
+</script>
 
+<marquee direction="left">
+    <font color="red" size="200">ΚΑΛΑ</font>
+    <font color="green" size="100"> ΧΡΙΣΤΟΥΓΕΝΝΑ</font>
+</marquee>
 
+<table width="90%">
+    <tr>
+        <td align="left">
+            <a href="ethima.html">
+                <font size="6" color="87c38f"><b>Έθιμα Χριστουγέννων</b></font>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+            <a href="glyka.html">
+                <font size="6" color="00be9c"><b>Χριστουγεννιάτικα Γλυκά</b></font>
+            </a>
+        </td>
+    </tr>
+</table>
 
-
-
-    </body>
-
+</body>
 </html>
-
