@@ -4,21 +4,28 @@
 </head>
 
 <body id="bg">
-
 <script>
   function fit() {
-    document.documentElement.style.height = innerHeight + "px";
-    document.documentElement.style.width = innerWidth + "px";
+    const h = window.innerHeight;
+    const w = window.innerWidth;
+
+    document.documentElement.style.height = h + "px";
+    document.documentElement.style.width = w + "px";
+
+    document.body.style.height = h + "px";
+    document.body.style.width = w + "px";
 
     document.body.style.backgroundImage = "url('Santa-Claus.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundAttachment = "fixed";  // keeps it fixed when scrolling
   }
 
   fit();
-  onresize = fit;
+  window.addEventListener("resize", fit);
 </script>
+
 
 
 <marquee direction="left">
